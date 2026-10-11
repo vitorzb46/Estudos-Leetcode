@@ -2,6 +2,10 @@
 {
     public class Solution
     {
+        /* Raciocínio: Pega a primeira palavra (candidato) do array
+        e compara a palavra atual, pulando o primeiro elemento.
+        Se nao for igual, corta a última letra do candidato. Retorna
+        o prefixo comum ou string vazia.*/
         public string LongestCommonPrefix(string[] strs)
         {
             string candidato = strs[0];
