@@ -6,8 +6,10 @@ public partial class Program
 {
     static void Main(string[] args)
     {
-        var now = DateTime.Now.ToString("dd:MM:yyyy HH:mm:ss.ffff");
-        var replace = Replace_Char_Custom.ReplaceChar(now, '_', [' ', '/', ':']);
-        Console.WriteLine(replace);
+        string haystack = "mississippi", needle = "issip";
+
+        Log($"First index: {FindFirstIndex.StrStr(haystack, needle)}\nExpected output: 4");
     }
+
+    static void Log(string msg) => Console.WriteLine(msg);
 }
